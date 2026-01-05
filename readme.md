@@ -55,5 +55,23 @@ undangin/
 ├── uploads/         # Folder penyimpanan foto user (di-ignore git)
 ├── index.php        # Landing Page
 ├── invitation.php   # Halaman Publik Undangan
+├── database.sql     # Skema Database
 └── README.md
 ```
+
+## 🔒 Keamanan
+Aplikasi ini menerapkan standar keamanan dasar:
+* SQL Injection Prevention: Menggunakan mysqli_real_escape_string.
+* XSS Protection: Sanitasi output dengan strip_tags (khusus iframe map) dan htmlspecialchars.
+* Session Management: Proteksi halaman dashboard dari akses tanpa login.
+* Secure File Upload: Validasi ekstensi dan ukuran file gambar.
+* Silahkan ditambahkan lagi jika ada yang kurang / terlewat
+
+## 👨‍💻 Author
+
+**Diardo Marendi Krista**
+* Program Studi Informatika
+* Universitas Ciputra Surabaya
+* 2025
+---
+*Dibuat untuk memenuhi Tugas Mata Kuliah Pemrograman Web.*

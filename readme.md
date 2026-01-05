@@ -19,8 +19,8 @@ Ikuti langkah ini untuk menjalankan proyek di komputer Anda:
 1.  **Clone Repository**
 
     ```bash
-    git clone [https://github.com/username-kamu/undangin.git](https://github.com/username-kamu/undangin.git)
-    cd undangin
+    git clone [https://github.com/diardomarendikrista/undangin-php.git](https://github.com/diardomarendikrista/undangin-php.git)
+    cd undangin-php
     ```
 
 2.  **Setup Database**
@@ -42,7 +42,7 @@ Ikuti langkah ini untuk menjalankan proyek di komputer Anda:
 
 4.  **Jalankan**
     - Pastikan Apache dan MySQL sudah jalan di XAMPP.
-    - Buka browser dan akses: `http://localhost/undangin`
+    - Buka browser dan akses: `http://localhost/undangin-php`
 
 ## 📂 Struktur Folder
 

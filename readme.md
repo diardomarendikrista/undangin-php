@@ -78,7 +78,7 @@ Aplikasi ini menerapkan standar keamanan dasar:
 - XSS Protection: Sanitasi output dengan strip_tags (khusus iframe map) dan htmlspecialchars.
 - Session Management: Proteksi halaman dashboard dari akses tanpa login.
 - Secure File Upload: Validasi ekstensi dan ukuran file gambar.
-- Silahkan ditambahkan lagi jika ada yang kurang / terlewat
+- Silahkan ditambahkan lagi jika ada yang kurang / terlewat.
 
 ## 👨‍💻 Author
 

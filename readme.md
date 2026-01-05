@@ -14,34 +14,43 @@
 
 ## 🚀 Cara Instalasi (Localhost)
 
-Ikuti langkah ini untuk menjalankan proyek di komputer Anda:
+Ikuti langkah ini untuk menjalankan proyek di komputer Anda (menggunakan XAMPP):
 
-1.  **Clone Repository**
+1.  **Masuk ke Folder Server**
+    Buka terminal/command prompt dan arahkan ke folder `htdocs` XAMPP Anda:
+
+    ```bash
+    cd C:\xampp\htdocs
+    ```
+
+2.  **Clone Repository**
+    Download source code ke dalam folder tersebut:
 
     ```bash
     git clone [https://github.com/diardomarendikrista/undangin-php.git](https://github.com/diardomarendikrista/undangin-php.git)
     cd undangin-php
     ```
 
-2.  **Setup Database**
+3.  **Setup Database**
 
-    - Buat database baru di phpMyAdmin bernama `db_undangin`.
-    - Import file `database.sql` yang ada di repository ini.
-    - File ini sudah dikonfigurasi agar kompatibel dengan Localhost maupun Hosting (InfinityFree).
+    - Buka phpMyAdmin (`http://localhost/phpmyadmin`).
+    - Buat database baru bernama `db_undangin`.
+    - Import file `database.sql` yang ada di dalam folder repository ini.
 
-3.  **Konfigurasi Koneksi**
+4.  **Konfigurasi Koneksi**
 
     - Masuk ke folder `config/`.
-    - Buka file `connection.php` dan sesuaikan kredensial database lokal Anda:
+    - Rename file `connection.example.php` menjadi `connection.php`.
+    - Sesuaikan kredensial database (Default XAMPP biasanya password kosong):
       ```php
       $hostname = "localhost";
       $username = "root";
-      $password = ""; // Sesuaikan dengan XAMPP/MAMP
+      $password = "";
       $database = "db_undangin";
       ```
 
-4.  **Jalankan**
-    - Pastikan Apache dan MySQL sudah jalan di XAMPP.
+5.  **Jalankan**
+    - Pastikan Apache dan MySQL di XAMPP sudah di-start.
     - Buka browser dan akses: `http://localhost/undangin-php`
 
 ## 📂 Struktur Folder
@@ -60,18 +69,23 @@ undangin/
 ```
 
 ## 🔒 Keamanan
+
 Aplikasi ini menerapkan standar keamanan dasar:
-* SQL Injection Prevention: Menggunakan mysqli_real_escape_string.
-* XSS Protection: Sanitasi output dengan strip_tags (khusus iframe map) dan htmlspecialchars.
-* Session Management: Proteksi halaman dashboard dari akses tanpa login.
-* Secure File Upload: Validasi ekstensi dan ukuran file gambar.
-* Silahkan ditambahkan lagi jika ada yang kurang / terlewat
+
+- SQL Injection Prevention: Menggunakan mysqli_real_escape_string.
+- XSS Protection: Sanitasi output dengan strip_tags (khusus iframe map) dan htmlspecialchars.
+- Session Management: Proteksi halaman dashboard dari akses tanpa login.
+- Secure File Upload: Validasi ekstensi dan ukuran file gambar.
+- Silahkan ditambahkan lagi jika ada yang kurang / terlewat
 
 ## 👨‍💻 Author
 
 **Diardo Marendi Krista**
-* Program Studi Informatika
-* Universitas Ciputra Surabaya
-* 2025
+
+- Program Studi Informatika
+- Universitas Ciputra Surabaya
+- 2025
+
 ---
-*Dibuat untuk memenuhi Tugas Mata Kuliah Pemrograman Web.*
+
+_Dibuat untuk memenuhi Tugas Mata Kuliah Pemrograman Web._

@@ -52,11 +52,6 @@ CREATE TABLE IF NOT EXISTS `wishes` (
 
 -- --------------------------------------------------------
 
--- (OPSIONAL) DUMMY DATA USER
--- Password: "password123" (sudah di-hash)
-INSERT INTO `users` (`id`, `username`, `password`, `full_name`) VALUES
-(1, 'admin', '$2y$10$wSjWw/qx.m/Xw.w/wSjWw.k1z1z1z1z1z1z1z1z1z1z1z1z1', 'Administrator');
-
 -- HIDUPKAN KEMBALI FOREIGN KEY CHECK
 SET FOREIGN_KEY_CHECKS = 1;
 COMMIT;

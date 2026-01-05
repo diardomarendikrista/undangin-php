@@ -4,6 +4,8 @@
 
 🔗 **Live Demo:** [https://undangin.xo.je](https://undangin.xo.je)
 
+![UndangIn Preview](assets/images/preview.jpg)
+
 ## 🛠️ Teknologi yang Digunakan
 
 - **Backend:** PHP (Native)

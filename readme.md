@@ -1,0 +1,59 @@
+# UndangIn - Platform Undangan Digital
+
+**UndangIn**, Platform berbasis web yang memungkinkan pengguna membuat undangan digital secara instan, murah, dan tanpa coding. Dibangun menggunakan **PHP Native** untuk performa yang ringan dan struktur kode yang bersih.
+
+🔗 **Live Demo:** [https://undangin.xo.je](https://undangin.xo.je)
+
+## 🛠️ Teknologi yang Digunakan
+
+- **Backend:** PHP (Native)
+- **Database:** MySQL
+- **Frontend:** HTML5, CSS3, JavaScript (Vanilla)
+- **Styling:** Custom CSS (Tanpa Framework berat seperti Bootstrap/Tailwind)
+- **Deploy:** InfinityFree Hosting & Cloudflare.
+
+## 🚀 Cara Instalasi (Localhost)
+
+Ikuti langkah ini untuk menjalankan proyek di komputer Anda:
+
+1.  **Clone Repository**
+
+    ```bash
+    git clone [https://github.com/username-kamu/undangin.git](https://github.com/username-kamu/undangin.git)
+    cd undangin
+    ```
+
+2.  **Setup Database**
+
+    - Buat database baru di phpMyAdmin bernama `db_undangin`.
+    - Import file `database.sql` yang ada di repository ini.
+    - File ini sudah dikonfigurasi agar kompatibel dengan Localhost maupun Hosting (InfinityFree).
+
+3.  **Konfigurasi Koneksi**
+
+    - Masuk ke folder `config/`.
+    - Buka file `connection.php` dan sesuaikan kredensial database lokal Anda:
+      ```php
+      $hostname = "localhost";
+      $username = "root";
+      $password = ""; // Sesuaikan dengan XAMPP/MAMP
+      $database = "db_undangin";
+      ```
+
+4.  **Jalankan**
+    - Pastikan Apache dan MySQL sudah jalan di XAMPP.
+    - Buka browser dan akses: `http://localhost/undangin`
+
+## 📂 Struktur Folder
+
+```text
+undangin/
+├── assets/          # File CSS, JS, dan Images statis
+├── auth/            # Halaman Login & Register
+├── config/          # Koneksi Database
+├── dashboard/       # Halaman Admin (CRUD Event)
+├── uploads/         # Folder penyimpanan foto user (di-ignore git)
+├── index.php        # Landing Page
+├── invitation.php   # Halaman Publik Undangan
+└── README.md
+```

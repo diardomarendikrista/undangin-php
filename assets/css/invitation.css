@@ -1,0 +1,273 @@
+/* assets/css/invitation.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  /* set 1: pink */
+  /* background-color: #fff0f5; 
+  color: #4a4a4a; */
+  /* set 2: Cream */
+  background-color: #f9f8f4;
+  color: #3d3d3d;
+  /* set 3: Sage Green */
+  /* background-color: #f1f8e9;
+  color: #2c3e50; */
+  /* set 4: Ice Blue */
+  /* background-color: #f0f4f8;
+  color: #334155; */
+}
+
+.not-found-title {
+  text-align: center;
+}
+
+.invitation-cover {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-family: "Great Vibes", cursive;
+  font-size: 3.5rem;
+  margin: 10px 0;
+  color: #ffd700;
+}
+
+.guest-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 10px 0 30px 0;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 15px;
+  border-radius: 50px;
+}
+
+.btn-open,
+.btn-kirim-ucapan {
+  margin-top: 30px;
+  padding: 12px 30px;
+  background: #ffd700;
+  color: #333;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+}
+
+.btn-kirim-ucapan {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.invitation-content {
+  padding: 50px 20px;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.opening-text {
+  font-size: 0.95rem;
+  text-align: center;
+  margin-bottom: 12px;
+  opacity: 0.85;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.section-detail {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.invitation-footer {
+  margin-top: 48px;
+}
+
+.countdown-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.cd-box {
+  background: white;
+  padding: 10px;
+  width: 70px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cd-box span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  /* color: #ffd700; */
+  color: #d4af37;
+  line-height: 1.2;
+}
+
+.cd-box small {
+  font-size: 0.7rem;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.map-container {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+  width: 100% !important;
+  display: block;
+}
+
+.map-title {
+  margin-top: 0px;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+/* BAGIAN WISHES / COMMENT */
+.section-wishes {
+  margin-top: 40px;
+  padding: 0 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wish-form-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+/* List Ucapan */
+.wishes-list {
+  text-align: left;
+}
+
+.wishes-container {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+/* Scrollbar (Webkit only) */
+.wishes-container::-webkit-scrollbar {
+  width: 5px;
+}
+.wishes-container::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.wish-item {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #ffd700;
+}
+
+.wish-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.attendance-badge {
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+.wish-date {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.75rem;
+  color: #999;
+}
+
+.no-wishes {
+  color: #666;
+  font-style: italic;
+}
+
+/* efek tombol breathing */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .map-container iframe {
+    height: 350px;
+  }
+}
+
+/* Responsive untuk HP yang kecil */
+@media (max-width: 400px) {
+  .countdown-wrapper {
+    gap: 10px;
+  }
+  .cd-box {
+    width: 60px;
+  }
+  .cd-box span {
+    font-size: 1.2rem;
+  }
+}

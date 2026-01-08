@@ -32,6 +32,7 @@ $p = isset($path) ? $path : '';
 
           <div id="mavbarDropdown" class="nav-dropdown-content">
             <a href="<?= $p ?>dashboard/index.php">Dashboard</a>
+            <a href="<?= $p ?>dashboard/profile.php">Profil Saya</a>
             <a href="<?= $p ?>index.php">Halaman Utama</a>
             <hr class="nav-hr-logout">
             <a href="<?= $p ?>logout.php" class="nav-btn-logout">Keluar</a>

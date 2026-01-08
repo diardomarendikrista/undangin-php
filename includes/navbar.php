@@ -30,7 +30,7 @@ $p = isset($path) ? $path : '';
             Halo, <strong><?= $fullname ?></strong> ▼
           </button>
 
-          <div id="mavbarDropdown" class="nav-dropdown-content">
+          <div id="navbarDropdown" class="nav-dropdown-content">
             <a href="<?= $p ?>dashboard/index.php">Dashboard</a>
             <a href="<?= $p ?>dashboard/profile.php">Profil Saya</a>
             <a href="<?= $p ?>index.php">Halaman Utama</a>

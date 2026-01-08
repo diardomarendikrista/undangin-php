@@ -1,6 +1,6 @@
 // Fungsi untuk toggle class 'show' pada dropdown
 function toggleNavbarDropdown() {
-  document.getElementById("mavbarDropdown").classList.toggle("show");
+  document.getElementById("navbarDropdown").classList.toggle("show");
 }
 
 // untuk sekarang, scroll ke isi
@@ -47,10 +47,10 @@ if (countdownElem) {
 // Tutup dropdown kalau user klik di luar menu
 window.onclick = function (event) {
   if (
-    !event.target.matches(".dropdown-toggle") &&
-    !event.target.matches(".dropdown-toggle *")
+    !event.target.matches(".nav-dropdown-toggle") &&
+    !event.target.matches(".nav-dropdown-toggle *")
   ) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var dropdowns = document.getElementsByClassName("nav-dropdown-content");
     for (var i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
       if (openDropdown.classList.contains("show")) {
